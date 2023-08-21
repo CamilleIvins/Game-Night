@@ -1,20 +1,16 @@
-export class Player {
-    constructor(name) {
-        this.name = name;
-        // The score is defaulted to start at 0
-        this.score = 0;
+export class Players {
+
+    name
+    score
 
 
+    constructor(newName, newScore) {
+        console.log('testing, testing')
 
+        this.name = newName;
 
-
-        constructor(newName, newScore) {
-            console.log('testing, testing')
-        }
+        this.score = newScore;
     }
-
-
-
-
-
 }
+
+
