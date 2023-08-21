@@ -11,6 +11,22 @@ export class Players {
 
         this.score = newScore;
     }
+
+    get PlayerTemplateCard() {
+        return `
+    <div class="card">
+    <div class="card-body">
+            ${this.name}'s score is: ${this.score}
+        </div>
+        <button onclick="app.PlayersController.scorePoint()">
+        +1
+        </button>
+    </div>
+
+    `
+    }
+
+
 }
 
 
