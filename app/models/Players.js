@@ -18,7 +18,7 @@ export class Players {
     <div class="card-body">
             ${this.name}'s score is: ${this.score}
         </div>
-        <button onclick="app.PlayersController.scorePoint()">
+        <button onclick="app.PlayersController.scorePoint('${this.name}')">
         +1
         </button>
     </div>
