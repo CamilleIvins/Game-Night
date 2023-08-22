@@ -6,21 +6,38 @@ import { AboutView } from "./views/AboutView.js";
 
 
 export const router = [
+  //   {
+  //     path: '',
+  //     controller: HomeController,
+  //     view: /*html*/`
+  //     <form onsubmit="app.playersController.addPlayer()">
+  //   <div>
+  //     <label for="name">Player Name:</label>
+  //     <input type="text" minlength="2" maxlength="15" name="name" required />
+  //   </div>
+  //   <div>
+  //     <button type="submit">Add Player</button>
+  //   </div>
+  // </form>
+  //     `},
   {
-    // path: '',
-    // controller: HomeController
-    // view: /*html*/`
-    // <div class="card">
-    //   <div class="card-body">
-    //     <p>Home Page</p>
-    //     <button class="btn btn-dark" onclick="app.HomeController.testButton()">😎</button>
-    //   </div>
-    // </div>
-    // `
-
     path: '',
     controller: PlayersController,
-    view: /*html*/``
+    view: /*html*/`
+    <form onsubmit="app.playersController.addPlayer()">
+    <div>
+      <label for="name">Player Name:</label>
+      <input type="text" minlength="2" maxlength="15" name="name" required />
+    </div>
+    <div>
+      <button class="btn" type="submit">Add Player</button>
+    </div>
+  </form>
+
+  <div>We have our players</div>
+  <section class="row" id="players">
+  </section>
+</main>`
   },
   {
     path: '#/about',

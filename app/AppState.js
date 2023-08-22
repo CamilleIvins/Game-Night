@@ -9,6 +9,10 @@ class ObservableAppState extends EventEmitter {
   players = [
     new Players('Laila', 17),
     new Players('Ransom', 11),
+    new Players('Livia', 18),
+    new Players('Ramin', 14),
+    new Players('Rosalyn', 12),
+    new Players('Richmond', 17),
   ];
 
 
