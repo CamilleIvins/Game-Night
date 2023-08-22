@@ -7,8 +7,8 @@ import { loadState } from "./utils/Store.js"
 class ObservableAppState extends EventEmitter {
 
   players = [
-    new Players("Laila", 17),
-    new Players("Ransom", 11)
+    new Players('Laila', 17),
+    new Players('Ransom', 11),
   ];
 
 

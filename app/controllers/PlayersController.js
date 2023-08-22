@@ -1,4 +1,6 @@
 import { AppState } from "../AppState.js"
+import { playersService } from "../services/PlayersService.js";
+
 
 export class PlayersController {
     constructor() {
@@ -17,8 +19,10 @@ export class PlayersController {
 
 
     scorePoint(playerName) {
-        let addPoint = parseInt(window.prompt('New score: '))
-        console.log('+1', playerName, addPoint)
+        let updatedScore = parseInt(window.prompt('New score: '))
+        console.log('+1', playerName, updatedScore)
+        playersService.scorePoint(playerName, updatedScore)
+        this.drawPlayers()
     }
 
 }
